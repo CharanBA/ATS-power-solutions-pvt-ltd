@@ -4,37 +4,96 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-  </head>
-  <body>
-    <!-- <h1>hello budd</h1> -->
-    <div>
-      <span>
-        <p>
-          About Us Established in 2003, ATS Power Solutions has been in the
-          forefront of manufacturing a wide range of quality switchgear
-          equipments from a single protective relay panel to complex
-          synchronizing panels. Our team of experts with decades of expertise in
-          panel manufacturing industry plays a pivotal role in providing
-          custom-built, consistent, hassle-free quality protection and control
-          solutions, using the latest technologies, which would transform your
-          business into highly efficient and successful venture Precision
-          Engineering, unsurpassed reliability rational pricing and customer
-          delight have been the hallmark of our success story thus far
-        </p>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+          body {
+            background: linear-gradient(to bottom, #007bff, #8e8eb8);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh; /* Ensure gradient covers the whole viewport height */
+          }
 
-        <img
-          style="
+          div.container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 800px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          }
+
+          p {
+            color: #000;
+            line-height: 1.6;
+            margin-bottom: 20px;
+          }
+
+          img {
             max-width: 100%;
             height: auto;
             display: block;
             margin: 0 auto;
             margin-top: 10px;
-          "
-          src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQA4gMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAAAAQIDBAUGB//EADgQAAIBAwMCBAUDAgQHAQAAAAECAAMEEQUSITFBEyJRYQYycYGRFCOhQlKxwdHwB1NiosLh8RX/xAAaAQEAAwEBAQAAAAAAAAAAAAAAAgMEAQUG/8QAIhEAAwACAwEBAAIDAAAAAAAAAAECAxEEEiExIlFxBTKR/9oADAMBAAIRAxEAPwDyISSmZHHKYBM3SQt1MlHIkbwB9I8SPuY6n1iN1MAURQI1JKo5gDSsTEn25EbtgEOImJIREIgDIkeRDEAbDEdiKg5gCYhiS7faNIgEeIhEkIjTAEAi4iqJIF4gEWIhElZYwiAMhiPCxDAIm6xBJDGGALxCJg/2n8RYAhgJZuLVkycHErEY68QCWmeIjxqGKYAUz5oP1jU4aSOOIA2nLCjnErqcGW7eo1NtyNhvWGCRV44gVmtToUdQolqSrRuU+dVGFYeso1KL022upEhNJ+DZSZYwqSeBLi0Hq1RTpjLHpOj0C1srd1ZkepUP9Rx/E5dqJ2yu7UmXpnwtfXoWpWBoUmOFLIdx+gnXab/w7tUpmpd8jGS1Ryo/jE6z4etFUFgiqW6sRgmUfiRf1hKGoaZpkHnoO5yO/EzY/wDJJvSlf2zPkVP9NvX8IqJ8FfD70loV6FkWbnfTfa5x75zKlx/wy045/TXlwh69Q4H8S/aV7Zq1OnRoiox7inhfrmateg7NQ/THwgCS5ZmX3xkD/SXYua8mXrekv6KXbhbnf/TzjW/gTVtMVnpp+qpKCSaYwQPpOUKcz3uy1I2rsLkO+fk5B5mD8UfCOna61W805ltbwoXISn5ah9G9PqJpqMnbXXz+V8NGLkxS9Z5AVkeOZauaNS3rPQrIUrU2Ksh4wZGEOc9pCvz9NO19GqvElCcR1NlHWnkj1aW71KVPw6aLtdV/cPv6faR7bekE0zPZYzbzLBQlcqpOOpx0iBZI6QFcRhlllkTKBAIthMBSbPyxd+GAA4lxflBE6Cpir7wlrJ9ITgLzEsOcH7SnWtlrttA59hLzgU0Lv16ASSinh0TUfqe8AyKtgKSZDkn0xKU6BU/UggA4HeQPpVPOSxH0MbBir80lPyyS7tWtmyDlO0j4K8GdBHiT0jzIDJKJ5H1gG/pj+G1VvRP/ACEmvK9N6HAGO0zBW8O2qepUD/uBlI3TEkbsA9ZQ8e72iDXuzU0soLpGqAsAcYHf2nT6BToLd1Gt/kTICEZONwGZydiNpViTk4wR29T+J2+hU1D0aIpkqwxleg9BO860pUooSbrbO4s9/wCnWrTCqoOVIPURzMfGqOqg1WXcpYccjr9JXoit4Pg02RMnbjupz6GP/VUzb7lZttU5Vm7jv/JnzvWt7RbkaU6ZTt7MfrTUWnTTZSJaoGwA/UAD8yyKtHwqdQZ3VguMc5OO8V6iU2Com52X5FPWQB6lBN9zbq1TcR4YG/YMDDH6dfuJr42DNyL6pGRtJFi+ZqFo71QFR1wiEZJbufbEjsLk+AwA3YXBJPC4z/HOZRvrq4rGjcVavisE3ru4C9uMcekS1qvSZnYhSFByWwMT67i8ZcfB1b2edlyO8n5Rn/Fehpq9KsaNGml02WQ45XjpmeYU9yGpSrrtem20j3nsFfXtKtWrOhNaszbUQL5VH19f9Zylv8P2OqalWvGRlpswJpg4WeXzcuJZfyenxVUxqjldOotc3aeHTNTYd21QSTjsfvOg0z4Nv75wbqoLdTySfM/47fedxpGn21oyUbahTp0yCSqoOeO8zPizVDpOlmnQfF5deVMHlV7t/v1mCc9U9Sa14cZ8Q1LW3f8A/K0oAWtE/u1M5avU9SfQdpjEAc9pMU2r0lW4NVh5EOPUCb5nqtEx9MCozAf0xTbE4Ksp9pW081UuCNpOT5szSu7Z289L5/SSBTahXHyov2kIrOjbaykSxQunSr4VYcwuk8VG39QfKYAoCkZyISFUqBRx2hALFw5q3CqDwJM24MiqdzHp7TPpVc1ySe80LE+Ncsf7YBfCrbUOev8AjK24tyTge8W+r5qLTBHl/kyBDuJ39uIBLVCVU2soI9TI0tbYHHh/6SJ6wDYXoI4V9oz3gE5srd+DSUfSU7vTSuatv2HKGX7Q1a7hKfDN0M6mw+G0rUv3rmuzelPAH85katSTWOq+HnLtmiyHr6SK2wCWPQTf+JdPFnWdFqMQOgfGZg2qhs5PAEnje3tEMkufpo0QyKjKRg9GJ/M6v4frJnxBWH7Z8288jHP36TlqRDU0Q4yp49/aW7I06dQ/qt7JnPlODM/Kjd7ZQvmz0wa7TSiXRjUBUr5E6HHUnPEq2t3eapcUzTohSi7y9VgoRccnHP8A8+2aVndVqNCgbZmazqHBCDn3Dehxj8iXbZamn+KEoW5Nan4TPR6gE5+nTHOJyf8AG9tUq8KbpN+mxZ0LajRVaN2XYeZquAOO4X2mLV1bw/Fa1qNTxT8hU7gST16YxMjVrwrut7XZTLYOxVxn6zMvLrYB8qFlIwuQOvM9B3h4cdJRUprI/C/cazVqNSqOAHUYfdz+OYhr1a7BbioxAGUQ9F/3gTCsS9fUaavlqYy7Y7gDMvXFdVrmpkDPOczzeRycuV6b8/g0RgiXtfRl5Ubdvp9R6HpOy0ans0y1DAb2QM3qSZxShKxLIynn7Z+s7vSgXoW+DlTSXH4mO09F3vw1aIWliu5201BLMegGOTPK9e1Q6tqNS7fIpnikp6hB0+/edl8e6mbHTU0y1cmtcnnn5U7/AJ6TgRYuQNz/AGHE1cTHpdmSS0RipTcYFMkfzEWtToZHg1efaWaenKpyQCZK9tsXKl8/WayRVomlVOUNQN6MJOGHAYj2MRWenwenoen57SjcV3tqmSgekx6HqpnQLqNuHBqKPMvMgt63i0SMeYdpcS5WsoYDqOVlCkPDuKi9oA/MSRF+YQCt0Yma+lN4NJqnr1mNmaNpXQWT0mOH7QBl7ULkVcdXyD9JI9XyFiSSZBd1E8GlTRsleshdzidBNTfc3Jj92agGeJTVtsVWOTzAOi+H7imLhmcjjAAnoWmXtFEBY7VbpjvPIbSs1JwQeD1naaHfpXJLt8vAmTLPuzbge1ou/G+mJVpfqLcqxPVdwzPOjQrUS26jVC9d3hkD8z0Wtcr44p7wpByfabOmXVA3CDxzVRuGWoo2n7TuPK5JZeOrX08kWqOmSvuex+ku/qQyIxqA1CcMduARPTdR+GtIsNXF1b26YrebZjyA9eB2mfqT6JSvLa5srG3p3KkpVwvH1xLr5E340Z1wqfqZgaJqdWzKIlytRM5amWIJ+h9f8pt3t7RRWdag8Lt+4S2PTOefp2m/e22nfENq1pcUaaXOzdSroMN/7nmPgXNnq1W3v1wbZ8MueG9MfXrGLk9E+hlz8Ry/0bAAp1HuKud1QhiCSdinov3xMm/rB3Zi3H8TYt9K1PVEDlfApOSxer1+w+k1KHw/pdiFeqGrXCHO+oc8/TpMtVu+1fSzFxqpefDI+FtDu6tX9Zcsba32EKD87Z7gdvvOtt30fS2Hg2tJqxPLsoZz95hXWturNSCYBi21hqt2PHt7KoyHozEL/jOPbPSx4McfTrL86RrFmyXFBaFYDyumAyn6j/CUtNvrHTCtBc5UYAzlj95nWmka5TLVbmxfGPLtdW/zmXX/AFdnVd6trX8Vm70zI6ZaseLezttbtNJ1rT2qmmq3KJ5auOV9ie49p54tru5R1bPYGdT8NUri4rhrujVSkvOG/qM37/Q7K+Vg9EU6h5WonlIl2OmvGZORinf5POMGn5cRdwIwRLOoUK1ld1bav86H+OxEzq1ZQODmaUYh1VF25GAZnXSqSdwyCMGS1bkbcZmfXrF+8ApKfBuCMnbmT1D5w+e3Mq3B3FW6EQNQlcToAtyYsh3RJ0DZLTIPBkR6xV4gD6gCnGPvEzkQLZGI2ALmKDGxRAJV6D07zT02+FFsDgk9ZloedvrHEEdJClvwsmnPqN2/vt9fx6Z4cYb2Mfp1+y1EbxcBSOJh065ztfoZao03LAnHhn0ErcLWi+Mr3s7rVtf3m082VzyffHScjqdzUW7FzyFZjxIqlzWatSs6rft0mJT7y7qdDxLAkLkL0Mgp0XPI2no2ND1l3u6B/wCWNv1nW6la2NWrT1RqavVUBSx7Ty7RbsJUTI5Jx9J6NpFZbmgaNw2UdNpEha0yctXPpJXvaeBsx9czGvbpTlicmV9et62l3bUzUIoOC1Nm6EensROXvtSY/t0nJz1b0nJjYrIpRqWz0bvXrakzZUHJ98T13TfiC3S1SlWt6ZCjAxPA7Wo9CutdGy687pu0fiF+AH2n+0tiWNNfCtUqX6PY6+u6db+HWWnsSo20r2MhqXFncMSCuMZE8ku9arXQp0WYhVOeT0M2bHVSlNF3liowWkXskpl/Geg4tqDbqTA98SK41Cmj7Qc57TlKmvolLNNd7H1PeZI1G4urnJrBcc4zI+kHP8lv43q03uaNwhXJBpvj8j/P8zi69bzMAeDND4gvS729MHncWPvMKrV5P+U1Y/8AUyZFqh1Spx1ldqkY9SRsZMrFc5jSeI3MQmdAQiwgCQhCAECYQgAIoiQzAHZki1MfMMyGGYBY8rDI4mjp1UtSah/W3QzJpgluDky5p1Tw64J6yFIsh+7H32ad2jdCJ0+mJ+qsChwcic9rSYKVB0l/QLwqy0yeMSqvZL4erMy5oNYXrIePNlZ1/wAOargqGYD6iZ3xJZCtRFZB5wOsw7C7ei4dfXkTjXZEpfSj1jVbO313SzQrfMRlWzyp9Z5XqNjd6dc1betbuTTON4UkEdjmdtoepPUoh6eGXODjtOgo/pbsk19u5htOZXN9WWXHZbR4sa7twCMe0QjaAanU9BPSPiH4VtXDVbceGx6smP8AZnGXug3NBuAX+ol85JZnrFRnUrh6fckf2nmWad/UUeVcD/pOJEllVBG9eCfm7Te07SEwrttb2zmKqUhjm/hmU7m7r8JTbB7iWadB6QD1iQRzgzoqq0rOkrMqq5+VR2nJatfms5pUz5c+Y56yM/olf5+shr1/HrvUHQcL9JUdskmKauxNqSEky9LS0ZW9sUtGxQCY4JOnBnWOCx22LAGbRCLCAMhCEAIQhACEIQAhiEWAKhKkEHkS0r+IPEA2t3EqRysQeI0dTNiswuLPHcCUrGoaVddxxtMKVfHEjqcPwesr15os7bezvaStc2IJXKleDkTitRtns7pgF/bJzmauj64ltaG3uNxUHhhyZYv6tlfU8huD0lU7hmimrkydP1KvZVN9F+CPMvYzqdM1tawBqMAT2nGV7Y0nPh/LCnWemRzj3naxqvUQjK58Z6ab7egO4lfSNceMmePacRa6vXosPNkTesdWRzgsBn1MorG0aZyzRom1p7GXwVw3UEQq1hQUsNo2jAwAMxH1GioGHDcdhOV+IdcNVjQt+P7mHadiap6ZzJahbK+u6s1WoUptuPQt6TCyTx2iwmyZUnn1bp+iAescFhFHEkRFCgQhmJAFiQhAExCLEgEcIkWAEIRYAkIsIAQhCAEM4iQgDgcGSCov9Qz7iQxZzR1MtLWp+/4h+opr8paVYZnOqO9i6Lzdwc/iLupuOvMowHB4neqHZl5Btzg8S1aXdGk/7wBH8iZe9gPmP5iZJ7yLnZ1W18NvVNXR6PhWWVXuSMTC5zkxxMSSmevw5VOn6ETMCYk6RHZi5jIoMAdCNzAwB2YExo6xTADMIkIAyEIQBYCEIAsIQgBCEIAkIQgBFhCAEIQgBARYQB0IkIAhMSEIAkIQgBCLCAEIQgBFMIQBIQhAP//Z"
-          alt="earth"
-          srcset=""
-        />
-      </span>
-    </div>
-  </body>
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          }
+
+          div.container.decorative-line {
+            /* border: 1px solid black; */
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+            max-width: 800px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          }
+          .decorative-line {
+            border: 1px solid black;
+            border-radius: 5px;
+          }
+        </style>
+      </head>
+      <body>
+        <div class="container">
+          <span>
+            <p>
+              About Us Established in 2003, ATS Power Solutions has been in the
+              forefront of manufacturing a wide range of quality switchgear
+              equipments from a single protective relay panel to complex
+              synchronizing panels. Our team of experts with decades of
+              expertise in panel manufacturing industry plays a pivotal role in
+              providing custom-built, consistent, hassle-free quality protection
+              and control solutions, using the latest technologies, which would
+              transform your business into highly efficient and successful
+              venture Precision Engineering, unsurpassed reliability rational
+              pricing and customer delight have been the hallmark of our success
+              story thus far
+            </p>
+
+            <img src="desinic-master\assets\images\download.jpeg" alt="earth" />
+            <br />
+            <br />
+            <br />
+
+            <div class="decorative-line">
+              <h2>
+                Vision: To strive towards a leadership position in the panel
+                manufacturing industry & allied services by ensuring superior
+                quality, timely service and rational pricing to enhance customer
+                satisfaction & trust. <br /><br />
+                Mission: To contribute to efficient energy management by
+                thinking globally and acting locally.
+              </h2>
+            </div>
+          </span>
+        </div>
+      </body>
+    </html>
+  </head>
 </html>
