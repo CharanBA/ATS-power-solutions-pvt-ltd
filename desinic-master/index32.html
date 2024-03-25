@@ -6,6 +6,47 @@
     <title>Document</title>
     <html lang="en">
     <style>
+           
+     .navbar {
+  background-color: var(--white);
+  display: flex; /* Display navbar items horizontally */
+  justify-content: space-between; /* Align items to start and end */
+  align-items: center; /* Center items vertically */
+  padding: 20px;
+}
+
+.navbar-top {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-list {
+  display: flex;
+  list-style-type: none; /* Remove default list styles */
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-item {
+  margin-right: 20px; /* Adjust spacing between items */
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #000; /* Change link color */
+}
+
+.nav-close-btn {
+  color: var(--space-cadet-1);
+  font-size: 2.8rem;
+  padding: 4px;
+}
+
+.logo {
+  color: var(--st-patricks-blue);
+  font-size: 1.6rem; /* Adjust logo size */
+  font-weight: bold; /* Make logo bold */
+}
       body {
         background: linear-gradient(to bottom, #007bff, #8e8eb8);
         font-family: Arial, sans-serif;
@@ -57,6 +98,45 @@
         </style>
       </head>
       <body>
+        <nav class="navbar" data-navbar>
+
+          <div class="navbar-top">
+            <a href="#" class="logo">ATS Power Solutions</a>
+  
+            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+          </div>
+  
+          <ul class="navbar-list">
+  
+            <li class="navbar-item">
+              <a href="index.html" class="navbar-link" data-navbar-link>Home</a>
+            </li>
+  
+            <li class="navbar-item">
+              <a href="index.html#about" class="navbar-link" data-navbar-link>About</a>
+            </li>
+  
+            <li class="navbar-item">
+              <a href="index.html#services" class="navbar-link" data-navbar-link>Services</a>
+            </li>
+  
+            <li class="navbar-item">
+              <a href="index.html" class="navbar-link" data-navbar-link>Features</a>
+            </li>
+  
+            <li class="navbar-item">
+              <a href="index.html" class="navbar-link" data-navbar-link>Blog</a>
+            </li>
+  
+            <li class="navbar-item">
+              <a href="index.html" class="navbar-link" data-navbar-link>Contact Us</a>
+            </li>
+  
+          </ul>
+  
+        </nav>
         <div class="container">
           <span>
             <p style=" text-align: justify;">

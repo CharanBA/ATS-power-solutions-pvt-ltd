@@ -10,6 +10,9 @@
   #CUSTOM PROPERTY
 \*-----------------------------------*/
 
+.navbar-top a {
+  float: left;
+}
 :root {
   /**
    * colors
