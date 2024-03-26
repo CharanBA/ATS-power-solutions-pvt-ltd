@@ -19,10 +19,19 @@ const pool = mysql.createPool({
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use(express.static(path.join(__dirname, "public")));
+// Define the directory where your index.html is located
+const htmlPath = path.join(
+  "C:",
+  "Users",
+  "dell",
+  "ATS-power-solutions-pvt-ltd",
+  "desinic-master"
+);
+
 // Serve the HTML file with the button
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "index.html"));
+  // Serve index.html from the specified location
+  res.sendFile(path.join(htmlPath, "index.html"));
 });
 
 // Serve the page with the form
