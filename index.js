@@ -2,6 +2,7 @@ const express = require("express");
 const mysql = require("mysql2");
 const bodyParser = require("body-parser");
 const path = require("path");
+const { Script } = require("vm");
 
 const app = express();
 const port = 3000;
@@ -72,7 +73,8 @@ app.post("/submit", (req, res) => {
         return;
       }
       console.log("Inserted successfully:", result);
-      res.send("Enquiry submitted successfully");
+      // res.send("Enquiry submitted successfully");
+      res.redirect("http://127.0.0.1:5500/desinic-master/index.html");
     });
   });
 });
